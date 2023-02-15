@@ -1,0 +1,27 @@
+/* .heading {
+    -webkit-text-stroke: 2px var(--primary);
+    color: transparent;
+    filter: drop-shadow(0 0 .35rem var(--primary));
+  }
+
+  .hero--secondary .heading {
+    background: radial-gradient(circle at center, white .11rem, transparent 0);
+    background-size: .4rem .4rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .hero--secondary {
+    --clip: circle(20% at 70%);
+    -webkit-clip-path: var(--clip);
+    clip-path: var(--clip);
+  }
+
+  .hero--secondary {
+    --mask: radial-gradient(circle at 70%, black 25%, transparent 0);
+    -webkit-clip-path: var(--mask);
+    clip-path: var(--mask);
+  } */
+
+/*# sourceMappingURL=/styles.b61e60ae.css.map */
