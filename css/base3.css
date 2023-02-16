@@ -9,17 +9,17 @@
   }
   
   body {
-    --activeColor: rgb(240 240 240);
-    --navBgColor: rgb(37 38 41);
-    --navTextColor: rgb(144 144 150);
-    --mainBg: rgb(20 20 23);
-    font-family: "Syncopate", sans-serif;
+    --activeColor: black;
+    --navBgColor: transparent;
+    --navTextColor: #646464;;
+    /* --mainBg: rgb(20 20 23); */
+    font-family: 'ABC Diatype Semi-Mono';
     min-height: 100vh;
     margin: 0;
     color: var(--navBgColor);
     background: var(--mainBg);
-  }
-  
+  } 
+
   section {
     --h: calc(var(--i) * 30);
     min-height: 100vh;
@@ -27,20 +27,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(var(--h, 0), 75%, 60%);
+    /* background-color: hsl(var(--h, 0), 75%, 60%); */
   }
   
-  nav {
+  .bottom-timeline {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     background: var(--navBgColor);
     color: var(--navTextColor);
-    z-index: 2;
+    z-index: 1;
     height: 6rem;
   }
-  nav::after {
+  .bottom-timeline::after {
     content: "";
     position: absolute;
     top: 1.7rem;
@@ -110,7 +110,59 @@
   }
   
   .section__heading {
-    font-size: clamp(2rem, 12vmin, 7rem);
+    font-size: 54px;
     line-height: 1;
     letter-spacing: -0.06em;
-  }/*# sourceMappingURL=style.css.map */
+    color: black;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+
+
+  
+  .section__secondheading {
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: -0.06em;
+    color: black;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+
+  
+  .cover-exp {} 
+  
+  .body-text {} 
+  
+  .caps {}
+  
+  .paragraph {
+    width: 600px;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+  }
+
+
+
+  @font-face {
+    font-family: 'ABC Diatype Semi-Mono';
+    src: url('/fonts/ABCDiatypeSemi-Mono-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Coign Pro 47';
+    src: url('/fonts/Coign-Pro-47-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Coign 47';
+    src: url('/fonts/coign-47-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }

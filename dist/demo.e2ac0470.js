@@ -121,7 +121,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"/Users/rprotoliuk/Desktop/multi/portfolio-project-1/fonts/ABCDiatypeSemi-Mono-Regular.woff2":[["ABCDiatypeSemi-Mono-Regular.bf226e5a.woff2","fonts/ABCDiatypeSemi-Mono-Regular.woff2"],"fonts/ABCDiatypeSemi-Mono-Regular.woff2"],"/Users/rprotoliuk/Desktop/multi/portfolio-project-1/fonts/Coign-Pro-47-Bold.woff2":[["Coign-Pro-47-Bold.7a3ef704.woff2","fonts/Coign-Pro-47-Bold.woff2"],"fonts/Coign-Pro-47-Bold.woff2"],"/Users/rprotoliuk/Desktop/multi/portfolio-project-1/fonts/coign-47-bold.woff2":[["coign-47-bold.e0514bca.woff2","fonts/coign-47-bold.woff2"],"fonts/coign-47-bold.woff2"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -146,7 +146,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62582" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58088" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

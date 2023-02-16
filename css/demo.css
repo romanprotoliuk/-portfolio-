@@ -5,11 +5,10 @@
   :root {
     --bg: #F9FAFB;
     --primary: turquoise;
-    --gradientBg: linear-gradient(45deg, #40e0d0, #9932cc, #ff1493, orange);
+    --gradientBg: linear-gradient(45deg, #18939e, #b8dbdf);
   }
   
   .content {
-    font-family: Montserrat, sans-serif;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -31,6 +30,7 @@
     padding: 0.5rem;
     font-size: inherit;
     cursor: pointer;
+    z-index: 3;
   }
   
   .wrapper {
@@ -81,7 +81,7 @@
     background: var(--gradientBg);
     clip-path: circle(0 at calc(100% - 2rem) 2rem);
     transition: clip-path 500ms;
-    z-index: 1;
+    z-index: 2;
     font-size: clamp(1rem, 3vw, 4rem);
   }
   
@@ -92,9 +92,12 @@
   
   .menu a {
     display: block;
-    padding: 0.5em;
-    text-decoration: none;
-    font-weight: 900;
+    font-size: 9rem;
+    letter-spacing: -5px;
+    /* padding: 0.5em; */
+    font-family: 'ABC Diatype Semi-Mono', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
   }
   
   .menu a:hover,
@@ -107,8 +110,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(20 20 23);;
-    color: white;
+    background: transparent;;
+    color: black;
     padding: 0.75rem;
     width: 3.5rem;
     height: 3.5rem;
@@ -129,8 +132,8 @@
   .menu-button__icon::after {
     display: block;
     width: 2rem;
-    height: 4px;
-    background-color: white;
+    height: 3px;
+    background-color: black;
   }
   
   .menu-button__icon::before,
@@ -200,4 +203,27 @@
   /* Text animation */
   .hero--primary .hero__heading .char {
     display: inline-block;
+  }
+
+
+  @font-face {
+    font-family: 'ABC Diatype Semi-Mono';
+    src: url('/fonts/ABCDiatypeSemi-Mono-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Coign Pro 47';
+    src: url('/fonts/Coign-Pro-47-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Coign 47';
+    src: url('/fonts/coign-47-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
   }
