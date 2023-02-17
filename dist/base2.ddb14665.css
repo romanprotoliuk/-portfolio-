@@ -11,7 +11,7 @@
 	--color-link: #fff;
 	--color-link-hover: #000;
 	--color-label: #fff;
-	--content-hover: #f3727e;
+	--content-hover: #00ffbf;
 	/* Glitch variables */
 	--gap-horizontal: 20px;
     --gap-vertical: 5px;
@@ -45,7 +45,7 @@ body {
 	margin: 0;
 	color: var(--color-text);
 	/* background-color: var(--color-bg); */
-	font-family: widescreen-ex, sans-serif;
+	font-family: "ABC Diatype Semi-Mono";
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden;
@@ -749,8 +749,8 @@ a:focus-visible {
 }
 
 .item__content-title {
-	font-family: park-lane, serif;
-	font-weight: 300;
+	font-family: 'ABC Diatype Semi-Mono';
+	font-weight: 500;
 	font-style: normal;
 	font-size: clamp(3rem,4vw,5rem);
 	line-height: 1;
@@ -806,5 +806,14 @@ blockquote {
 		text-align: right;
 	}
 }
+
+
+@font-face {
+    font-family: 'ABC Diatype Semi-Mono';
+    src: url('/Syne-Regular.0bc400b8.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
 
 /*# sourceMappingURL=/base2.ddb14665.css.map */

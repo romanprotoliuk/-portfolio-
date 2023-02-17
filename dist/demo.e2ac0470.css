@@ -14,6 +14,7 @@
     padding: 0;
     background-color: var(--bg);
     color: #ffffff;
+    font-family: 'ABC Diatype Semi-Mono';
   }
   
   /* Reset */
@@ -46,9 +47,10 @@
   
   /* Text */
   .hero__heading {
-    font-size: clamp(2rem, 8vw, 8rem);
+    font-size: clamp(3rem, 8vw, 8rem);
     line-height: 1.1;
-    font-weight: 900;
+    font-weight: 500;
+    text-align: center;
     margin: 0;
   }
   
@@ -88,11 +90,12 @@
   .menu.is-open {
     clip-path: circle(200% at calc(100% - 2rem) 2rem);
     pointer-events: all;
+    display: flex;
   }
   
   .menu a {
     display: block;
-    font-size: 9rem;
+    font-size: 4rem;
     letter-spacing: -5px;
     /* padding: 0.5em; */
     font-family: 'ABC Diatype Semi-Mono', sans-serif;
@@ -203,6 +206,12 @@
   /* Text animation */
   .hero--primary .hero__heading .char {
     display: inline-block;
+  }
+
+  @media (max-width: 650px) {
+    menu a {
+      font-size: 20px;
+    }
   }
 
 
